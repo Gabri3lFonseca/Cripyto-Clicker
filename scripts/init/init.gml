@@ -1,0 +1,1 @@
+global.moedaPorSec = 0;

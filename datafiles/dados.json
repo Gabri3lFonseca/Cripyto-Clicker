@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "indice": 0,
+      "nome": "Ventilação Inicial",
+      "custo_base": 4,
+      "tempo": 1,
+      "lucro_base": 1,
+      "descricao": "Melhora a circulação de ar inicial para otimizar o resfriamento das máquinas de mineração."
+    },
+    {
+      "indice": 1,
+      "nome": "Ferramentas de Monitoramento",
+      "custo_base": 60,
+      "tempo": 3,
+      "lucro_base": 60,
+      "descricao": "Implementa ferramentas avançadas de monitoramento para identificar gargalos e problemas de maneira mais eficiente."
+    },
+    {
+      "indice": 2,
+      "nome": "Overclock Controlado",
+      "custo_base": 720,
+      "tempo": 6,
+      "lucro_base": 540,
+      "descricao": "Realiza overclock controlado nas máquinas para obter maior poder de processamento, sem comprometer a estabilidade."
+    },
+    {
+      "indice": 3,
+      "nome": "Refrigeração Aprimorada",
+      "custo_base": 8640,
+      "tempo": 12,
+      "lucro_base": 4320,
+      "descricao": "Integra sistemas de resfriamento mais avançados para manter as temperaturas sob controle e prolongar a vida útil dos componentes."
+    },
+    {
+      "indice": 4,
+      "nome": "Algoritmo Otimizado",
+      "custo_base": 103680,
+      "tempo": 12,
+      "lucro_base": 51840,
+      "descricao": "Desenvolve um algoritmo personalizado para um tipo específico de criptomoeda, melhorando a eficiência da mineração."
+    },
+    {
+      "indice": 5,
+      "nome": "Expansão da Fazenda",
+      "custo_base": 1244160,
+      "tempo": 96,
+      "lucro_base": 622080,
+      "descricao": "Amplia o espaço da fazenda de mineração para acomodar mais equipamentos e aumentar a capacidade de mineração."
+    },
+    {
+      "indice": 6,
+      "nome": "Energia Sustentável",
+      "custo_base": 14929920,
+      "tempo": 384,
+      "lucro_base": 7464960,
+      "descricao": "Instala painéis solares para reduzir os custos de energia e tornar a mineração mais ecologicamente sustentável."
+    },
+    {
+      "indice": 7,
+      "nome": "Supercomputação",
+      "custo_base": 179159040,
+      "tempo": 1536,
+      "lucro_base": 89579520,
+      "descricao": "Incorpora supercomputadores à operação de mineração para um aumento significativo no poder de processamento."
+    },
+    {
+      "indice": 8,
+      "nome": "IA de Otimização Avançada",
+      "custo_base": 2149908480,
+      "tempo": 6144,
+      "lucro_base": 1074954240,
+      "descricao": "Implementa uma IA avançada para otimizar automaticamente todas as operações, maximizando os lucros."
+    },
+    {
+      "indice": 9,
+      "nome": "Quantum Mining",
+      "custo_base": 25798901760,
+      "tempo": 36864,
+      "lucro_base": 29668737024,
+      "descricao": "Introduz a computação quântica na mineração, proporcionando um aumento substancial no poder de mineração através da resolução mais eficiente de algoritmos complexos."
+    }
+  ]
+}
