@@ -1,3 +1,6 @@
+//Criei o objeto jogo, eu carrego as informações
+load_game();
+
 //Lista de produtos 
 produtos = [];
 managers = [];
@@ -5,7 +8,8 @@ managers = [];
 //Dados da surface dos managers
 surf_man = noone;
 man_w = 400;
-man_h = 500;
+man_h_base = 500;
+man_h = 1;
 man_x = 1000;
 man_y = 88;
 
@@ -35,6 +39,7 @@ function cria_managers(){
 		managers[i] = instance_create_layer(900, 100 + i * 100, layer, obj_manager);
 		
 		managers[i].custo = global.produtos[i].custo * 10;
+		managers[i].indice = i;
 	}
 }	
 
@@ -62,7 +67,7 @@ function rolagem(_val = 10, _x = 0, _y = 0, _w = 0, _h = 0){
 	//show_message(_w);
 	if(_w != 0){
 		_fazer = point_in_rectangle(mouse_x, mouse_y, _x, _y, _x + _w, _y + _h);
-		show_debug_message("foi");
+		//show_debug_message("foi");
 	}
 	
 	if(_fazer){
@@ -107,6 +112,15 @@ function gerencia_manager(){
 //Criando minha surface dos meus managers
 function desenha_managers(){
 
+	//Mudando o tamanho da surface com base na glogal exibe managers
+	if (global.exibe_manegers){
+		man_h = lerp(man_h, man_h_base, .1);
+	}
+	else{
+		man_h = lerp(man_h, 1, .1);	
+	}
+	show_debug_message(man_h);
+
 	//Chegando se a suface existe
 	if(surface_exists(surf_man)){
 		//Fazer coisas na surface
@@ -119,10 +133,12 @@ function desenha_managers(){
 		
 		
 		//Desenhando os managers
-		with(obj_manager){
-			desenha_manager();
-			meu_x = other.man_x;
-			meu_y = other.man_y;
+		if(man_h > 3){
+			with(obj_manager){
+					desenha_manager();
+					meu_x = other.man_x;
+					meu_y = other.man_y;
+				}
 		}
 		
 		
@@ -132,6 +148,8 @@ function desenha_managers(){
 		
 		//Desenhando a minha surface
 		draw_surface(surf_man, man_x, man_y);
+		
+		surface_resize(surf_man, man_w, man_h);
 	}
 	else{
 		//Se ela não existe eu crio ela...

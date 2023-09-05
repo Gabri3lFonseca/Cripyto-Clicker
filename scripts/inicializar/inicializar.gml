@@ -28,7 +28,9 @@ global.money = 5;
 global.manegers = [0, 0, 0, 0, 0, 0, 0, 0];
 
 //Lista dos produtos
-global.produtos = [0, 0, 0, 0, 0, 0, 0, 0];
+global.produtos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+
 
 //Abrindo meu jason
 var _file = file_text_open_read("dados.json");
@@ -50,4 +52,6 @@ while(true){
 
 //Convertendo esse txt em uma struct
 global.struct_produtos = json_parse(_txt).items;
+
+//Fechando o arquivo
 

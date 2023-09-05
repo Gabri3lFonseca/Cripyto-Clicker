@@ -10,6 +10,10 @@ else{
 	global.game_spd = 1;
 }
 
+if(keyboard_check_pressed(ord("S"))){
+	save_game();
+}
+
 if(keyboard_check(ord("L"))){
 	global.money += 10000000;
 }
