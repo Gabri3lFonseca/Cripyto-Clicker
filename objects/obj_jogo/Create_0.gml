@@ -25,9 +25,23 @@ produtos_y = 0 + base_y;
 function cria_produtos(_qtd = 1){
 	for(var i = 0; i < _qtd; i++){
 		
+		
+		//Passando as informaçoes dos produtos pros produtos
+		 
+		
 		//Struct com os meus dados que eu estou pegando do meu json
 		var _struct = global.struct_produtos[i];
 		produtos[i] = instance_create_layer(0, 0, layer, obj_produto, _struct);
+		
+		//Passando as informaçoes dos produtos pros produtos
+		//Se eu tenho as informações eu faço esse bagui mt loko aqui
+		with(produtos[i]){
+		
+			level = global.produtos_info[i].level;
+			comprado = global.produtos_info[i].comprado;
+			tenho_manager = global.produtos_info[i].tenho_manager ;
+		}
+		
 		
 	}
 }
@@ -113,7 +127,7 @@ function gerencia_manager(){
 function desenha_managers(){
 
 	//Mudando o tamanho da surface com base na glogal exibe managers
-	if (global.exibe_manegers){
+	if (global.exibe_managers){
 		man_h = lerp(man_h, man_h_base, .1);
 	}
 	else{

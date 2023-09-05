@@ -8,12 +8,12 @@ if(_mouse_sobre && comprado == false){
 		if(global.money >= custo){
 			global.money -= custo;
 			//Avisando que foi comprado
-			global.manegers[indice] = true;
+			global.managers[indice] = true;
 			comprado = true;
 			
 			//Avisando ao produto que ele deve fazer sempre
 			global.produtos[indice].fazer = true;
-			global.produtos[indice].tenho_menager = true;
+			global.produtos[indice].tenho_manager = true;
 			
 			
 		}

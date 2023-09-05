@@ -11,12 +11,12 @@ meu_y = 0;
 fazer = false;
 infos = false;
 
-if(array_length(global.manegers) <= indice){
-	tenho_menager = global.manegers[indice];
+if(array_length(global.managers) <= indice){
+	tenho_manager = global.managers[indice];
 }
 else{
-	array_push(global.manegers, 0)
-	tenho_menager = 0;
+	array_push(global.managers, 0)
+	tenho_manager = 0;
 }
 
 //Meus custos
@@ -58,7 +58,7 @@ function comprar(){
 //Ação de compra e efeitos
 function acao(){
 	timer = 0;
-	fazer = tenho_menager;
+	fazer = tenho_manager;
 	//Dando o lucro
 	global.money += lucro;
 }

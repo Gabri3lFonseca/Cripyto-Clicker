@@ -35,7 +35,7 @@ function save_game(){
 		_elemento = { 
 			comprado	  : global.produtos[_indice].comprado,
 			level		  : global.produtos[_indice].level,
-			tenho_manager : global.produtos[_indice].tenho_menager
+			tenho_manager : global.produtos[_indice].tenho_manager
 			};
 	
 			//show_message(_elemento);
@@ -46,10 +46,15 @@ function save_game(){
 	//Interrar pelo array e  criar a estrutura com os dados
 	var _produtos = array_map(_qtd_prod, _salva_dados);
 	
-	show_message(_produtos);
+	
 	
 	//Criando a estrutura que vai salvar o jogo
-	var _struct = { money : global.money }
+	var _struct = 
+	{ 
+		money	 : global.money,
+		produtos : _produtos
+	
+	};
 	
 	//show_message(_struct);
 	
@@ -66,6 +71,9 @@ function save_game(){
 
 //Carregando o jogo
 function load_game(){
+	
+	//Abrindo o arquivo
+	if(file_exists("save.json")){
 
 	//Abrindo arquivo
 	var _file = file_text_open_read("save.json");
@@ -79,7 +87,12 @@ function load_game(){
 	//Passando o gold para o jogo
 	global.money = _struct.money;
 	
+	//Passando as informações dos produtos para o jogo
+	global.produtos_info = _struct.produtos;
+	show_message(global.produtos_info);
+	
 	//Fechando o arquivo
 	file_text_close(_file);
 	
+	}	
 }

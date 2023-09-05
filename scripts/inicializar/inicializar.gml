@@ -19,17 +19,17 @@ function atualiza_tempo(){
 	global.framerate = global.gamesegundos * global.game_spd;
 }
 
-global.exibe_manegers = false;
+global.exibe_managers = false;
 
 //Variaveis de dinheiro
 global.money = 5;
 
-//Informação dos manegers
-global.manegers = [0, 0, 0, 0, 0, 0, 0, 0];
+//Informação dos managers
+global.managers = [0, 0, 0, 0, 0, 0, 0, 0];
 
 //Lista dos produtos
 global.produtos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-
+global.produtos_info = array_create(10, 0);
 
 
 //Abrindo meu jason

@@ -1,6 +1,6 @@
 
 
-comprado = global.manegers[indice];
+comprado = global.managers[indice];
 meu_y = 0;
 meu_x = 0;
 
