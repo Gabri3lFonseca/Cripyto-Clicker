@@ -89,7 +89,7 @@ function load_game(){
 	
 	//Passando as informações dos produtos para o jogo
 	global.produtos_info = _struct.produtos;
-	show_message(global.produtos_info);
+	//show_message(global.produtos_info);
 	
 	//Fechando o arquivo
 	file_text_close(_file);

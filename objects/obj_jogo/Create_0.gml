@@ -1,3 +1,8 @@
+
+
+alarm[0] = (game_get_speed(gamespeed_fps) * 10) * 2;
+
+
 //Criei o objeto jogo, eu carrego as informações
 load_game();
 
@@ -31,26 +36,36 @@ function cria_produtos(_qtd = 1){
 		
 		//Struct com os meus dados que eu estou pegando do meu json
 		var _struct = global.struct_produtos[i];
+		
 		produtos[i] = instance_create_layer(0, 0, layer, obj_produto, _struct);
 		
 		//Passando as informaçoes dos produtos pros produtos
 		//Se eu tenho as informações eu faço esse bagui mt loko aqui
-		with(produtos[i]){
+		if(global.produtos_info[i] != 0){
+			
+			//Atualizando o manager
+			global.managers[i] = global.produtos_info[i].tenho_manager;
+			
+			with(produtos[i]){
 		
-			level = global.produtos_info[i].level;
-			comprado = global.produtos_info[i].comprado;
-			tenho_manager = global.produtos_info[i].tenho_manager ;
-		}
-		
-		
+				level = global.produtos_info[i].level;
+				comprado = global.produtos_info[i].comprado;
+				tenho_manager = global.produtos_info[i].tenho_manager;
+				
+				//Atualizando as Infos dos produtos
+				ajusta_infos();
+			}
+		}		
 	}
 }
 
 function cria_managers(){
 	//1 manager para cada produto
 	for (var i = 0; i < array_length(produtos); i++){
-		var _meu_produto 
-		managers[i] = instance_create_layer(900, 100 + i * 100, layer, obj_manager);
+		var _meu_produto ={
+			indice : i	
+		}
+		managers[i] = instance_create_layer(900, 100 + i * 100, layer, obj_manager, _meu_produto);
 		
 		managers[i].custo = global.produtos[i].custo * 10;
 		managers[i].indice = i;
@@ -133,7 +148,7 @@ function desenha_managers(){
 	else{
 		man_h = lerp(man_h, 1, .1);	
 	}
-	show_debug_message(man_h);
+	//show_debug_message(man_h);
 
 	//Chegando se a suface existe
 	if(surface_exists(surf_man)){

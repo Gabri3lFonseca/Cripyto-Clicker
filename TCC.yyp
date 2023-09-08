@@ -42,7 +42,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.8.0.98",
   },
   "resources": [
     {"id":{"name":"spr_Cronometro","path":"sprites/spr_Cronometro/spr_Cronometro.yy",},},
@@ -87,6 +87,7 @@
     {"roomId":{"name":"room_Principal","path":"rooms/room_Principal/room_Principal.yy",},},
     {"roomId":{"name":"room_Loja","path":"rooms/room_Loja/room_Loja.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

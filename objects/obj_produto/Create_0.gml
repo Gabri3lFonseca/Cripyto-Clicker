@@ -11,13 +11,7 @@ meu_y = 0;
 fazer = false;
 infos = false;
 
-if(array_length(global.managers) <= indice){
-	tenho_manager = global.managers[indice];
-}
-else{
-	array_push(global.managers, 0)
-	tenho_manager = 0;
-}
+tenho_manager = false;
 
 //Meus custos
 custo = custo_base;
@@ -54,6 +48,17 @@ function comprar(){
 	lucro = lucro_base * level;
 
 }
+
+function ajusta_infos(){
+
+	lucro = lucro_base * level;
+	custo = floor(custo_base * (power(incremento, level)));
+	//Atualizando o comprado
+	if (comprado) fazer = true;
+	
+
+}
+
 
 //Ação de compra e efeitos
 function acao(){
