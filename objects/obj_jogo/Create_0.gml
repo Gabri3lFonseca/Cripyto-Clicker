@@ -1,6 +1,6 @@
 
 
-alarm[0] = (game_get_speed(gamespeed_fps) * 10) * 2;
+alarm[0] = (game_get_speed(gamespeed_fps) * 60) * 2;
 
 
 //Criei o objeto jogo, eu carrego as informações

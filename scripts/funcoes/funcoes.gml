@@ -46,13 +46,22 @@ function save_game(){
 	//Interrar pelo array e  criar a estrutura com os dados
 	var _produtos = array_map(_qtd_prod, _salva_dados);
 	
+	//Salvando dinheiro por segundo
 	
+	//Pegando o memento em que o jogo foi fechado
+	var _tempo_atual =  date_current_datetime();
+	
+	//var _tempo2 = date_create_datetime(current_year, current_month, current_day, current_hour, current_minute, current_second + 20);
+	//var _dif = date_second_span(_tempo_atual, _tempo2);
+	//show_message(_dif);
 	
 	//Criando a estrutura que vai salvar o jogo
 	var _struct = 
 	{ 
-		money	 : global.money,
-		produtos : _produtos
+		money	  : global.money,
+		produtos  : _produtos,
+		money_seg : global.money_seg,
+		tempo     : _tempo_atual
 	
 	};
 	
@@ -90,6 +99,19 @@ function load_game(){
 	//Passando as informações dos produtos para o jogo
 	global.produtos_info = _struct.produtos;
 	//show_message(global.produtos_info);
+	
+	//Checando quanto tempo passou	
+	var _tempo = date_current_datetime();
+	var _dif = date_second_span(_struct.tempo, _tempo);
+	var _dinheiro_feito = _dif * _struct.money_seg;
+	var _str = converte_num(_dinheiro_feito);
+	//show_message(_dif);
+	show_message("Enquanto voce estava fora os seus gerentes fizeram: " + string(_str));
+	
+	//Sabendo quanto de dinheiro fiz desde que o jogo foi fechado
+	
+	//Atualizando o money
+	global.money += _dinheiro_feito;
 	
 	//Fechando o arquivo
 	file_text_close(_file);

@@ -35,6 +35,7 @@ function comprar(){
 	global.money -= custo;
 	comprado = true;
 	
+	//Definindo o custo
 	var _custo_atual = floor(custo_base * (power(incremento, level)));
 	
 	//Aumentando o custo
@@ -53,6 +54,7 @@ function ajusta_infos(){
 
 	lucro = lucro_base * level;
 	custo = floor(custo_base * (power(incremento, level)));
+	//custo += _custo_atual;
 	//Atualizando o comprado
 	if (comprado) fazer = true;
 	

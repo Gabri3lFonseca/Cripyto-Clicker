@@ -22,6 +22,7 @@
     {"name":"Menuzin","order":7,"path":"folders/Sprites/Menuzin.yy",},
     {"name":"Mouse","order":4,"path":"folders/Sprites/Mouse.yy",},
     {"name":"teste","order":11,"path":"folders/Sprites/teste.yy",},
+    {"name":"Artes","order":14,"path":"folders/Sprites/Artes.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_Cronometro","order":6,"path":"sprites/spr_Cronometro/spr_Cronometro.yy",},

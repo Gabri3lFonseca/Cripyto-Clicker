@@ -23,9 +23,10 @@ global.exibe_managers = false;
 
 //Variaveis de dinheiro
 global.money = 5;
+global.money_seg = 0;
 
 //Informação dos managers
-global.managers = [0, 0, 0, 0, 0, 0, 0, 0];
+global.managers = [0, 0, 0, 0, 0, 0, 0, 0, 0 ,0];
 
 //Lista dos produtos
 global.produtos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];

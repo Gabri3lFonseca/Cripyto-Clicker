@@ -35,6 +35,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menuzin","folderPath":"folders/Sprites/Menuzin.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mouse","folderPath":"folders/Sprites/Mouse.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"teste","folderPath":"folders/Sprites/teste.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Artes","folderPath":"folders/Sprites/Artes.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"dados.json","CopyToMask":3035426170322551022,"filePath":"datafiles",},
