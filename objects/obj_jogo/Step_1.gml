@@ -14,8 +14,8 @@ if(keyboard_check_pressed(ord("S"))){
 	save_game();
 }
 
-if(keyboard_check(ord("L"))){
-	global.money += 10000000;
+if(keyboard_check_pressed(ord("L"))){
+	global.money += 900000000000000000000000000;
 }
 
 gerencia_produtos();
