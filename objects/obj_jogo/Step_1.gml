@@ -15,7 +15,7 @@ if(keyboard_check_pressed(ord("S"))){
 }
 
 if(keyboard_check_pressed(ord("L"))){
-	global.money += 900000000000000000000000000;
+	global.money = 500;
 }
 
 gerencia_produtos();
