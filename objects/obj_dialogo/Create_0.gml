@@ -17,24 +17,21 @@ function desenha_dialogo(){
 	var _xs = 0;
 	var _ys = _guia -320;
 	
-	//for (var i = 0; i < 10; i++){
 	
+	
+	
+	
+	while (true){
+		if (global.produtos[0].level == 1){
+			//show_message("Foiiiiiiiii");
+			sobrepoe();
+			draw_sprite(spr_prof36, 0, _xs, _ys);
+			draw_sprite(spr_balao, 0, _x, _y - 60);
+			draw_text_ext(_x + 32, _y - 32, texto[pagina], 32, 1300);
 		
-			if (global.produtos_info[0].comprado /*&& global.produtos_info[0].level == 1*/){
-				sobrepoe();
-				draw_sprite(spr_prof36, 0, _xs, _ys);
-				//draw_rectangle_color(_x, _y, _guil, _guia, c_black, c_black, c_black, c_black, false);
-				draw_sprite(spr_balao, 0, _x, _y - 60);
-				draw_text_ext(_x + 32, _y - 32, texto[pagina], 32, 1300);
-				
-			}
-		
-		
-		
-	
-	
-	
-	
+	}	
+	break;
+}
 	
 }
 
