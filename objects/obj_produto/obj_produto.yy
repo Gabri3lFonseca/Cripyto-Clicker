@@ -35,8 +35,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_bt_novo",
-    "path": "sprites/spr_bt_novo/spr_bt_novo.yy",
+    "name": "spr_bt_up",
+    "path": "sprites/spr_bt_up/spr_bt_up.yy",
   },
   "spriteMaskId": null,
   "visible": true,

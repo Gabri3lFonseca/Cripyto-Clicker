@@ -22,7 +22,7 @@ function desenha_dialogo(){
 	
 	
 	while (true){
-		if (global.produtos[0].level == 1){
+		if (global.produtos[0].level == 0){
 			//show_message("Foiiiiiiiii");
 			sobrepoe();
 			draw_sprite(spr_prof36, 0, _xs, _ys);
