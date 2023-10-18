@@ -118,3 +118,26 @@ function load_game(){
 	
 	}	
 }
+
+//Pegar o valor da animação de curva
+///@function valor_ac(animation_curve, canal, animar, [canal])
+function valor_ac(_anim, _animar = false, _chan = 0){
+	
+	//Posição de animação
+	static _pos = 0, _val = 0;
+	
+	
+	//Aumentando o valor do pos
+	//Em um segundo o pos vai do 0 ate o 1(final da animção)
+	_pos += delta_time / 1000000;
+	
+	if (_animar) _pos = 0;
+	
+	//Pegando o valor do canal
+	var _canal = animcurve_get_channel(_anim, _chan);
+	_val = animcurve_channel_evaluate(_canal, _pos);
+	
+	
+	
+	return _val;
+}	

@@ -17,7 +17,7 @@ tenho_manager = false;
 custo = custo_base;
 comprado = false;
 
-//Efeito np Botão de compra
+//Efeito no Botão de compra
 efeito_comprar = false;
 
 //Meus ganhos
@@ -78,7 +78,7 @@ function desenha_produto(){
 	draw_set_font(fnt_texto);
 	
 	//Desenhando o produto
-	draw_sprite(spr_placa, indice, x-25, y-45);
+	draw_sprite(spr_placa, indice, x-25, y-60);
 	
 	//Alinhando do texto
 	draw_set_valign(1);

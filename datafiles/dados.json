@@ -2,19 +2,19 @@
   "items": [
     {
       "indice": 0,
-      "nome": "Ventilação Inicial",
+      "nome": "Primeiro PC",
       "custo_base": 4,
       "tempo": 1,
       "lucro_base": 1,
-      "descricao": "Melhora a circulação de ar inicial para otimizar o resfriamento das máquinas de mineração."
+      "descricao": "Começe a minerar com o seu primeiro computador. Compre mais upgrades para melhoralo"
     },
     {
       "indice": 1,
-      "nome": "Ferramentas de Monitoramento",
+      "nome": "Placas de vídeo",
       "custo_base": 60,
       "tempo": 3,
       "lucro_base": 60,
-      "descricao": "Implementa ferramentas avançadas de monitoramento para identificar gargalos e problemas de maneira mais eficiente."
+      "descricao": "Comece a construção de sua fazenda de mineração de criptomoedas comprando placas de vídeo."
     },
     {
       "indice": 2,
