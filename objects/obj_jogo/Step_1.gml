@@ -14,9 +14,6 @@ if(keyboard_check_pressed(ord("S"))){
 	save_game();
 }
 
-if(keyboard_check_pressed(ord("L"))){
-	global.money = 500;
-}
 
 gerencia_produtos();
 gerencia_manager();

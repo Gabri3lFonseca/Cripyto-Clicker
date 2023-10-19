@@ -141,3 +141,19 @@ function valor_ac(_anim, _animar = false, _chan = 0){
 	
 	return _val;
 }	
+	
+//Enumerator para definir as minhas ações
+enum menu_acoes{
+	
+	roda_metodo,
+	carrega_menu,
+	ajuste_menu
+
+}
+
+enum menus_lista{
+
+	principal,
+	opcoes,
+	tela
+}

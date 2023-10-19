@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 3,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Corpo",
+    "path": "folders/Sprites/Upgrade.Manager/Corpo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -2,7 +2,6 @@
 
 alarm[0] = (game_get_speed(gamespeed_fps) * 60) * 2;
 
-
 //Criei o objeto jogo, eu carrego as informações
 load_game();
 
@@ -14,16 +13,16 @@ managers = [];
 surf_man = noone;
 man_w = 400;
 man_h_base = 500;
-man_h = 1;
-man_x = 1000;
-man_y = 88;
+man_h = 500;
+man_x = 1109;
+man_y = 100;
 
 //Dados da surface dos produtos
 surf_prod = noone;
 prod_w = 860;
 prod_h = 500;
-prod_x = 148;
-prod_y = 88;
+prod_x = 170;
+prod_y = 100;
 
 base_y = 80;
 produtos_y = 0 + base_y;
@@ -141,13 +140,8 @@ function gerencia_manager(){
 //Criando minha surface dos meus managers
 function desenha_managers(){
 
-	//Mudando o tamanho da surface com base na glogal exibe managers
-	if (global.exibe_managers){
-		man_h = lerp(man_h, man_h_base, .1);
-	}
-	else{
-		man_h = lerp(man_h, 1, .1);	
-	}
+	
+	
 	//show_debug_message(man_h);
 
 	//Chegando se a suface existe
@@ -162,13 +156,14 @@ function desenha_managers(){
 		
 		
 		//Desenhando os managers
-		if(man_h > 3){
+		
+			
 			with(obj_manager){
 					desenha_manager();
 					meu_x = other.man_x;
 					meu_y = other.man_y;
 				}
-		}
+		
 		
 		
 		
@@ -212,6 +207,9 @@ function gerencia_produtos(){
 }
 //Criando minha surface dos meus produtos
 function desenha_produtos(){
+	
+	//var _custo = global.produtos_info / 2;
+	//var _compra = obj_produto.comprado;
 
 	//Chegando se a suface existe
 	if(surface_exists(surf_prod)){
@@ -225,11 +223,14 @@ function desenha_produtos(){
 		
 		
 		//Desenhando os produtos
-		with(obj_produto){
-			desenha_produto();
-			meu_x = other.prod_x;
-			meu_y = other.prod_y;
-		}
+		
+		
+			with(obj_produto){
+				//show_message("foi")
+				desenha_produto();
+				meu_x = other.prod_x;
+				meu_y = other.prod_y;
+			}
 		
 		
 		

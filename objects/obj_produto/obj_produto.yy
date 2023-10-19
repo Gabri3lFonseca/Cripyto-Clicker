@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "Upgrade",
+    "path": "folders/Objetos/Upgrade.yy",
   },
   "parentObjectId": null,
   "persistent": true,

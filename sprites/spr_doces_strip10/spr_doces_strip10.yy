@@ -35,7 +35,7 @@
   "origin": 0,
   "parent": {
     "name": "Artes",
-    "path": "folders/Sprites/Artes.yy",
+    "path": "folders/Sprites/Assets/Artes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

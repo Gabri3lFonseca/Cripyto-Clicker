@@ -34,8 +34,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Items",
+    "path": "folders/Sprites/Upgrade.Manager/Items.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

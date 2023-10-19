@@ -5,12 +5,15 @@ sel = 0;
 marg_val = 32;
 marg_total = 32;
 
+//Controlndo a pagina do menu
+pag = 0;
+
 #region METODOS
 
 function desenha_menu(_menu){
 	
 	//Definindo minha fonte
-	draw_set_font(fnt_menu);
+	draw_set_font(fnt_din);
 
 	//Alinhando o texto
 	draw_set_valign(1);
@@ -36,11 +39,11 @@ function desenha_menu(_menu){
 		var _cor = c_white, _marg_x = 0;
 	
 		//Desenhando o item do menu
-		var _texto = _menu[i];
+		var _texto = _menu[i][0];
 	
 	
 		//Permitindo a seleção
-		if (sel == i) {
+		if (menu_sel[pag] == i) {
 	    
 			_cor = c_blue;
 			_marg_x = marg_val;
@@ -73,14 +76,25 @@ function controla_menu(_menu){
 
 	if (_up or _down) {
 	    //Mudando o valor so sel
-		sel += _down - _up;
+		menu_sel[pag] += _down - _up;
 	
 		//limitando o sel
 		var _tam = array_length(_menu) - 1;
-		sel = clamp(sel, 0, _tam);
+		menu_sel[pag] = clamp(menu_sel[pag], 0, _tam);
 		
 		//Avisando que pode animar
 		_animar = true;
+	}
+	
+	//Oque fazer quando eu aperta o enter
+	if (_avanca) {
+	    switch(_menu[sel][1])
+		{
+			//caso seja 0, ele roda um metodo
+			case 0: _menu[menu_sel[pag]][2](); break;
+			//Mudar o valor da pagina
+			case 1: pag = _menu[menu_sel[pag]][2]; break;
+		}
 	}
 	
 	//Aumentando sempre o marg_val
@@ -89,9 +103,18 @@ function controla_menu(_menu){
 	}
 }	
 
-function iniciar(){
+function iniciar_jogo(){
 
-show_message("teste");
+	//Indo para a room inicial do jogo
+	room_goto(room_teste);
+
+}
+
+
+function sair_jogo(){
+
+	//Fechando o jogo
+	game_end();
 
 }
 
@@ -104,4 +127,21 @@ show_message("teste");
 //Texto - Ação - Conteudo da ação
 
 //Crian meu menu
-menu = ["Iniciar", "Opções", "Sair"]
+menu_principal =	[
+						["Iniciar", menu_acoes.roda_metodo, iniciar_jogo],
+						["Tipo de janela", menu_acoes.carrega_menu, menus_lista.tela],
+						["Sair", menu_acoes.roda_metodo, sair_jogo]
+					];
+
+menu_tela=		[
+						["Tipo de tela", menu_acoes.ajuste_menu, teste, 1, ["Tela cheia", "Janela"]],
+						["Voltar", menu_acoes.carrega_menu, menus_lista.principal]
+					];
+
+
+
+//Salvando todos os meus menus
+menus = [menu_principal, menu_tela];
+
+//Salvando a seleção de cada menu
+menu_sel = array_create(array_length(menus), 0);
