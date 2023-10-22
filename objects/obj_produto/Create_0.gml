@@ -1,6 +1,7 @@
 //Meu level
 level = 0;
 
+
 //mais informações
 timer = 0;
 
@@ -47,7 +48,28 @@ function comprar(){
 	
 	//Lucro vai ser com base no level e lucro base
 	lucro = lucro_base * level;
+	
+	
+	
 
+	//Criando o obj_dialogo sempre que compro um upgrade
+	if(global.produtos[0] == id && level = 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;
+		exit;
+	} 
+	if(global.produtos[1] == id && level = 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;
+		exit;
+	} 
+	if(global.produtos[2] == id && level = 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;	
+	} 
+		
+		
+	
 }
 
 function ajusta_infos(){

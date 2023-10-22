@@ -6,6 +6,9 @@ atualiza_tempo();
 if(keyboard_check(vk_space)){
 	global.game_spd = 40;
 }
+if(keyboard_check(vk_alt)){
+	global.money += 100000008;
+}
 else{
 	global.game_spd = 1;
 }

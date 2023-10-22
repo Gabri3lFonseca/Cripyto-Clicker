@@ -1,10 +1,12 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-prof_nome = "";
+prof_nome = "Professor";
 texto[0] = "";
 pagina = 0;
 
 iniciar = false;
+
+upgrade = noone;
 
 //Desenhando o dialogo
 function desenha_dialogo(){
@@ -18,22 +20,52 @@ function desenha_dialogo(){
 	var _ys = _guia -320;
 	
 	
+	var _level = [0,0,0,0,0,0,0,0,0,0];
 	
-	
-	
-	while (true){
-		if (global.produtos[0].level == 0){
-			//show_message("Foiiiiiiiii");
+	for (var i = 0; i < array_length(_level); ++i) {
+	    _level[i] = global.produtos[i].level;
+	}
+		//Conferindo se é a hora certa para o dialogo certo aparecer
+		if (_level[4] == 1 && upgrade == 1){
 			sobrepoe();
 			draw_sprite(spr_prof36, 0, _xs, _ys);
 			draw_sprite(spr_balao, 0, _x, _y - 60);
 			draw_text_ext(_x + 32, _y - 32, texto[pagina], 32, 1300);
+			exit;
+		}
 		
-	}	
-	break;
+		if (_level[3] == 1 && upgrade == 1){
+			sobrepoe();
+			draw_sprite(spr_prof36, 0, _xs, _ys);
+			draw_sprite(spr_balao, 0, _x, _y - 60);
+			draw_text_ext(_x + 32, _y - 32, texto[pagina], 32, 1300);
+			exit;
+		}
+		
+		if (_level[2] == 1 && upgrade == 1){
+			sobrepoe();
+			draw_sprite(spr_prof36, 0, _xs, _ys);
+			draw_sprite(spr_balao, 0, _x, _y - 60);
+			draw_text_ext(_x + 32, _y - 32, texto[pagina], 32, 1300);
+			exit;
+		}
+		
+		if (_level[1] == 1 && upgrade == 1){
+			sobrepoe();
+			draw_sprite(spr_prof36, 0, _xs, _ys);
+			draw_sprite(spr_balao, 0, _x, _y - 60);
+			draw_text_ext(_x + 32, _y - 32, texto[pagina], 32, 1300);
+			exit;
+		}
+		
+		if (_level[0] == 1 && upgrade == 1){
+			sobrepoe();
+			draw_sprite(spr_prof36, 0, _xs, _ys);
+			draw_sprite(spr_balao, 0, _x, _y - 60);
+			draw_text_ext(_x + 32, _y - 32, texto[pagina], 32, 1300);
+		}
 }
-	
-}
+
 
 //Sobrepondo o jogo e direcionando o foco do jogador para o dialogo
 function sobrepoe(){
@@ -43,6 +75,5 @@ function sobrepoe(){
 	draw_set_alpha(1);
 	
 }
-
 
 

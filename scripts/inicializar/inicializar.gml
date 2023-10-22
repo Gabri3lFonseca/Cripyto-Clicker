@@ -33,6 +33,7 @@ global.produtos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 global.produtos_info = array_create(10, 0);
 
 
+
 //Abrindo meu jason
 var _file = file_text_open_read("dados.json");
 var _txt = "";

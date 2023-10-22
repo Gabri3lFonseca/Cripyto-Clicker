@@ -3,6 +3,7 @@
 alarm[0] = (game_get_speed(gamespeed_fps) * 60) * 2;
 
 //Criei o objeto jogo, eu carrego as informações
+//save_game();
 load_game();
 
 //Lista de produtos 
@@ -26,18 +27,17 @@ prod_y = 100;
 
 base_y = 80;
 produtos_y = 0 + base_y;
+
+
 function cria_produtos(_qtd = 1){
 	for(var i = 0; i < _qtd; i++){
 		
-		
 		//Passando as informaçoes dos produtos pros produtos
-		 
-		
 		//Struct com os meus dados que eu estou pegando do meu json
 		var _struct = global.struct_produtos[i];
 		
 		produtos[i] = instance_create_layer(0, 0, layer, obj_produto, _struct);
-		
+		//show_debug_message(produtos[i].level);
 		//Passando as informaçoes dos produtos pros produtos
 		//Se eu tenho as informações eu faço esse bagui mt loko aqui
 		if(global.produtos_info[i] != 0){
