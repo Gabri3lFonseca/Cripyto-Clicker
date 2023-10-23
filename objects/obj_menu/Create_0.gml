@@ -134,7 +134,7 @@ menu_principal =	[
 					];
 
 menu_tela=		[
-						["Tipo de tela", menu_acoes.ajuste_menu, teste, 1, ["Tela cheia", "Janela"]],
+						["Tipo de tela", menu_acoes.ajuste_menu, spr_livro, 1, ["Tela cheia", "Janela"]],
 						["Voltar", menu_acoes.carrega_menu, menus_lista.principal]
 					];
 

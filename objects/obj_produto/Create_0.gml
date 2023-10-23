@@ -52,23 +52,27 @@ function comprar(){
 	
 	
 
-	//Criando o obj_dialogo sempre que compro um upgrade
-	if(global.produtos[0] == id && level = 1){
+	//Criando o obj_dialogo sempre que compro um upgrade especifico.
+	if(global.produtos[0] == id && level == 1){
 		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
 		_dialogo.upgrade = level;
 		exit;
 	} 
-	if(global.produtos[1] == id && level = 1){
+	
+	if(global.produtos[1] == id && level == 1){
 		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
 		_dialogo.upgrade = level;
 		exit;
 	} 
-	if(global.produtos[2] == id && level = 1){
-		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
-		_dialogo.upgrade = level;	
-	} 
+	//if(global.produtos[2] == id && level == 1){
+	//	var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+	//	_dialogo.upgrade = level;	
+	//} 
 		
-		
+	//if(global.produtos[3] == id && level == 1){
+	//	var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+	//	_dialogo.upgrade = level;	
+	//}	
 	
 }
 

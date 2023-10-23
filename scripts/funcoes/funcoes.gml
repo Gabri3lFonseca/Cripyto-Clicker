@@ -93,7 +93,7 @@ function load_game(){
 	//Convertendo a string em uma struct
 	var _struct = json_parse(_string);
 	
-	//Passando o gold para o jogo
+	//Passando o dinheiro para o para o jogo
 	global.money = _struct.money;
 	
 	//Passando as informações dos produtos para o jogo
