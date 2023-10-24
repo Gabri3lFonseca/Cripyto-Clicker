@@ -1,21 +1,21 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "room_teste",
-  "creationCodeFile": "rooms/room_teste/RoomCreationCode.gml",
+  "name": "rm_teste",
+  "creationCodeFile": "rooms/rm_teste/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_59EDDC99","path":"rooms/room_teste/room_teste.yy",},
-    {"name":"inst_6A89110","path":"rooms/room_teste/room_teste.yy",},
-    {"name":"inst_27F05A6D","path":"rooms/room_teste/room_teste.yy",},
+    {"name":"inst_59EDDC99","path":"rooms/rm_teste/rm_teste.yy",},
+    {"name":"inst_6A89110","path":"rooms/rm_teste/rm_teste.yy",},
+    {"name":"inst_27F05A6D","path":"rooms/rm_teste/rm_teste.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[],"depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Dialogo","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A89110","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_livro","path":"objects/obj_livro/obj_livro.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1572.0,"y":8.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A89110","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bt_livro","path":"objects/obj_bt_livro/obj_bt_livro.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1572.0,"y":8.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27F05A6D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dialogo","path":"objects/obj_dialogo/obj_dialogo.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":864.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

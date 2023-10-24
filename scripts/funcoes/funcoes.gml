@@ -147,13 +147,11 @@ enum menu_acoes{
 	
 	roda_metodo,
 	carrega_menu,
-	ajuste_menu
 
 }
 
 enum menus_lista{
 
 	principal,
-	opcoes,
-	tela
+	dialogos
 }

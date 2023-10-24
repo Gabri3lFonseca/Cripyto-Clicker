@@ -27,18 +27,35 @@ function src_texto(){
 	}
 	switch npc_nome{
 		case "Professor":
-		texto3[0] = "";
-		texto3[1] = "";
-		texto3[2] = "";
-		texto3[3] = "";
+		texto3[0] = "Fazendo um overclock na placa de vídeo conseguimos aumentar nossos ganhos, ele fará a placa sempre usar 110% do seu processamento. Mas isso vai exigir mais energia e isso vai superaquecer as placas. Junte mais dinheiro e compre uma refrigeração que mantenha a temperatura ideal das placas de vídeo.";
 		break;
 	}
 	switch npc_nome{
 		case "Professor":
-		texto4[0] = "";
-		texto4[1] = "";
-		texto4[2] = "";
-		texto4[3] = "";
+		texto4[0] = "Agora com uma boa refrigeração não precisamos nos preocupar com o superaquecimento, podemos continuar melhorando nossas ferramentas sem parar, aumentando sempre nosso lucro.";
+		texto4[1] = "A e não se esqueça de contratar os gerentes para automatizar a sua produção.";
+		break;
+	}
+	switch npc_nome{
+		case "Professor":
+		texto5[0] = "Agora com uma expansão na nossa fazenda de criptomoedas podemos comprar mais placas de vídeo e aumentar nossos ganhos.";
+		texto5[1] = "Chegamos em um ponto em que estamos usando muita energia e isso diminuirá o nosso lucro, precisamos achar alguma forma de energia sustentável para nos dar menos prejuízos.";
+		break;
+	}
+	switch npc_nome{
+		case "Professor":
+		texto6[0] = "Até que enfim uma forma de energia sustentável assim não teremos que pagar rios de dinheiro para companhias elétricas, agora o foco é o progresso novamente e sempre buscar mais dinheiro $$$$.";
+		break;
+	}
+	switch npc_nome{
+		case "Professor":
+		texto7[0] = "Com uma IA nos ajudando agora, ela agilizará os processos de escolha de criptomoedas, e escolherá a moeda que recompensará melhor no momento automaticamente além de fazer outras inúmeras tarefas.";
+		texto7[1] = "A e não se esqueça de contratar os gerentes para automatizar os seus ganhos.";
+		break;
+	}
+	switch npc_nome{
+		case "Professor":
+		texto8[0] = "Quantum Mining uma forma de minerar moedas jamais vista antes a partir de agora chegamos no ápice de tudo, nos tornamos mineradores Rei.";
 		break;
 	}
 }

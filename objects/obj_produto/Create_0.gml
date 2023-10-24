@@ -64,16 +64,42 @@ function comprar(){
 		_dialogo.upgrade = level;
 		exit;
 	} 
-	//if(global.produtos[2] == id && level == 1){
-	//	var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
-	//	_dialogo.upgrade = level;	
-	//} 
-		
-	//if(global.produtos[3] == id && level == 1){
-	//	var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
-	//	_dialogo.upgrade = level;	
-	//}	
 	
+	if(global.produtos[2] == id && level == 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;
+		exit;
+	} 
+		
+	if(global.produtos[3] == id && level == 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;
+		exit;
+	} 
+	
+	if(global.produtos[5] == id && level == 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;
+		exit;
+	} 
+	
+	if(global.produtos[6] == id && level == 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;
+		exit;
+	} 
+	
+	if(global.produtos[8] == id && level == 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;
+		exit;
+	} 
+	
+	if(global.produtos[9] == id && level == 1){
+		var _dialogo = instance_create_layer(32, 832, layer, obj_dialogo);	
+		_dialogo.upgrade = level;
+		exit;
+	} 
 }
 
 function ajusta_infos(){
